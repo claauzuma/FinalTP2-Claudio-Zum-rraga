@@ -1,0 +1,44 @@
+[
+	{
+		"nombre": "Memoria",
+		"precio": 1234,
+		"stock": 88,
+		"id": "1"
+	},
+	{
+		"nombre": "Memoria2",
+		"precio": 8765,
+		"stock": 88,
+		"id": "3"
+	},
+	{
+		"nombre": "Memoria7",
+		"precio": 8899,
+		"stock": 321,
+		"id": "5"
+	},
+	{
+		"nombre": "Memoria8",
+		"precio": 654,
+		"stock": 11,
+		"id": "6"
+	},
+	{
+		"nombre": "TV",
+		"precio": 1234,
+		"stock": 22,
+		"id": "7"
+	},
+	{
+		"nombre": "Mesa",
+		"precio": 123.56,
+		"stock": 45,
+		"id": "8"
+	},
+	{
+		"nombre": "Mesa",
+		"precio": 123.56,
+		"stock": 12,
+		"id": "9"
+	}
+]
