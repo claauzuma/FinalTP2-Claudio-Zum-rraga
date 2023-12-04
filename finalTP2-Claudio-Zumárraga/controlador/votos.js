@@ -19,9 +19,16 @@ class Controlador {
 
     cargarVoto = async (req, res) => {
         try {
-            const voto = req.body
-            const votoGuardado = await this.servicio.guardarVoto(voto)
-            res.json(votoGuardado)
+            if(req.body) {
+                const voto = req.body
+                const votoGuardado = await this.servicio.guardarVoto(voto)
+                res.json(votoGuardado)
+
+            }
+            else {
+                throw new Error("No hay body")
+            }
+
     
         }
         catch (error) {
