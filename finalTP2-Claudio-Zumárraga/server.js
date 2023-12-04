@@ -1,6 +1,6 @@
 
 import express from 'express'
-import RouterProductos from './router/reservas.js'
+import RouterVotos from './router/votos.js'
 
 
 class Server {
@@ -21,7 +21,7 @@ class Server {
         // -----------------------------------------------
         //         API RESTful : Productos
         // -----------------------------------------------
-        this.app.use('/api/reservas', new RouterProductos(this.persistencia).start())
+        this.app.use('/api/votos', new RouterVotos(this.persistencia).start())
 
         // -----------------------------------------------
         //        LISTEN DEL SERVIDOR EXPRESS
