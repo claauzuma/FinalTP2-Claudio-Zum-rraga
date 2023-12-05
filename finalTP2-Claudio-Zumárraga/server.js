@@ -18,14 +18,9 @@ class Server {
 
         this.app.use(express.static('public'))
 
-        // -----------------------------------------------
-        //         API RESTful : Productos
-        // -----------------------------------------------
+
         this.app.use('/api/votos', new RouterVotos(this.persistencia).start())
 
-        // -----------------------------------------------
-        //        LISTEN DEL SERVIDOR EXPRESS
-        // -----------------------------------------------
     
         const PORT = this.port
         this.server = this.app.listen(PORT, () => console.log(`Servidor express escuchando en http://localhost:${PORT}`))

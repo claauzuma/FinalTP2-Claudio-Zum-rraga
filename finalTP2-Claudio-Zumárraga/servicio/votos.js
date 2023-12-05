@@ -24,7 +24,7 @@ class Servicio {
     guardarVoto = async voto => {
         const res = validar(voto)
         if(res =="") {
-            const votoGuardado = await this.model.guardarVoto(voto)
+            await this.model.guardarVoto(voto)
             const votoCargado = "Voto cargado"
             return votoCargado
         }
